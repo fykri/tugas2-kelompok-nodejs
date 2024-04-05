@@ -53,7 +53,7 @@ const sequentilSearch = (arr, target) => {
     return result;
 }
 
-stack = [];
+
 app.get('/', (req, res) => {
     let result = mahasiswa; 
     if (req.query.nama) {
@@ -65,6 +65,7 @@ app.get('/', (req, res) => {
     res.render('home.ejs', { result, noData });
 });
 
+stack = [];
 app.post('/', (req, res) => {
     const data = req.body;
     stack.unshift(`data dengan nama ${data.nama} ditambahkan`)
