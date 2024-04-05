@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2 class="titleRiwayat">RIWAYAT</h2>
+    <ul class="liRiwayat">
+        <% if(stack == 0) { %>
+            <p>Belum ada Riwayat</p>
+        <% } %>
+        <% for(let st of stack) {%>
+            <li> - <%= st %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
